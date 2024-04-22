@@ -1,6 +1,11 @@
+import PostModelo from "../../componentes/PostModelo"
+import fotoCapa from "../../assets/sobre_mim_capa.png"
+
 const SobreMim = () =>{
     return (
-        <h1>Sobre Mim...</h1>
+        <PostModelo titulo={"Sobre mim"} fotoCapa={fotoCapa}>
+            Conteúdo...
+        </PostModelo>
     )
 }
 
