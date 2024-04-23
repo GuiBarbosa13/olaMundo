@@ -7,6 +7,7 @@ import PaginaPadrao from "./componentes/PaginaPadrao";
 import Post from "./paginas/Post";
 import NaoEncontrada from "./paginas/NaoEncontrada";
 import ScrollToTop from "./componentes/ScrollToTop";
+import BotaoRolar from "./componentes/BotaoRolar";
 
 
 
@@ -16,6 +17,7 @@ function AppRoutes() {
       <ScrollToTop/>
 
       <Menu /> {/*Se colocar aqui fora do Routes o componente aparece em todas as rotas*/}
+      <BotaoRolar/>
       <Routes>
         <Route path="/" element={<PaginaPadrao/>}>
           <Route path="/" element={<Inicio />} />
