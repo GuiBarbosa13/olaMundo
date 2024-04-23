@@ -9,9 +9,10 @@ export default function Post(){
     const post = posts.find((post)=>{
         return post.id === Number(parametros.id);
     })
-
-    console.log(post);
-    
+   
+    if(!post){
+        return <h1>POST NÃO ENCONTRADO</h1>
+    }
 
     return (
         <PostModelo titulo={post.titulo} fotoCapa={`/posts/${post.id}/capa.png`}>

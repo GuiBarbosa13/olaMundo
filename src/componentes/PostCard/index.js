@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './PostCard.module.css';
+import Botao from '../Botao';
 
 
 export default function PostCard({ post }) {
@@ -10,7 +11,7 @@ export default function PostCard({ post }) {
                 <h1 className={styles.titulo}>
                     {post.titulo}
                 </h1>
-                <button className={styles.botaoLer}>Ler</button>
+                <Botao>Ler</Botao>
             </div>
         </Link>
 
