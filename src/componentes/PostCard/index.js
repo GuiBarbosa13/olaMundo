@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import styles from './Post.module.css';
+import styles from './PostCard.module.css';
 
 
-export default function Post({post}){
+export default function PostCard({post}){
     return(
         <div className={styles.post}>
             <img src={`/posts/${post.id}/capa.png`} className={styles.capa} alt='Imagem de capa do post'/>
