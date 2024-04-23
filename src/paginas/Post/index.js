@@ -30,11 +30,11 @@ export default function Post() {
                     </Markdown>
                 </div>
                 <h2 className={styles.tituloOutrosPosts}>Outros posts que você pode gostar:</h2>
-                <div className={styles.postsRecomendados}>
+                <ul className={styles.postsRecomendados}>
                     {
-                        postFiltrado.map((postagem)=>{return <PostCard post={postagem}/>})
+                        postFiltrado.map((postagem)=>{return <li key={postagem.id}><PostCard post={postagem}/></li>})
                     }
-                </div>
+                </ul>
                 
 
             </PostModelo>
